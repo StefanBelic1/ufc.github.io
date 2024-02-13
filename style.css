@@ -1,0 +1,343 @@
+@import url('https://fonts.cdnfonts.com/css/sternbach');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(0,0,0);
+
+}
+
+.bgimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/pozadina.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:#000;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+ 
+  .topnav a {
+    color: red;
+    padding: 14px 16px;
+    padding-bottom: 20px;
+    font-family: 'Sternbach', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #ufc{
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .active {
+    background-color: black;
+    color: white;
+  }
+
+
+  .column-pocetna{
+    float:left;
+    width:100%;
+    padding:5px;
+   
+}
+
+#slika{
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.column-pocetna p{font-family: "Trirong", serif;
+    text-align:justify;
+    color:gray;
+    font-size: 1em;}
+
+    .column-pocetna h2{
+        color:white;
+        font-size: 2em;
+        font-family: 'Sternbach', sans-serif;
+        font-family: 'Sternbach Hollow', sans-serif;
+    
+    }
+
+  @media screen and (min-width: 600px) {
+
+    .column-pocetna{
+        margin-top: 30px;
+        float:left;
+        width:50%;
+        padding:15px;
+        
+        
+    }
+    .column-pocetna p{font-family: "Trirong", serif;
+    text-align:justify;
+    font-size: 1.5em;
+    color: gray;
+    margin-left: 40px;
+    }
+   
+    .row-pocetna::after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+    #slika{
+        height: auto;
+        width: 60%;
+        margin-bottom: 30px;
+        margin-top: 100px;
+        margin-left: 100px;
+        box-shadow: 5px 10px 18px #888888;
+    }
+    .column-pocetna h2{
+     
+        margin-left: 40px;
+    }
+
+}
+
+
+    #legende-slika{
+        height: 400px;
+        width: 300px;
+        vertical-align: center;
+    }
+ 
+    .slideshow {
+        max-width: 1000px;
+        z-index: -1;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:200px ;
+      }
+      
+    
+ 
+     #legende-naslov{
+        margin-left: 40px;
+        margin-bottom: 40px;
+        color:white;
+        font-size: 2em;
+        font-family: 'Sternbach', sans-serif;
+        font-family: 'Sternbach Hollow', sans-serif;
+        
+     }
+   
+      .text {
+        color:red;
+        font-size: 1.5em;
+        font-family: 'Sternbach', sans-serif;
+        
+        padding: 8px 12px;
+        position: relative;
+        bottom: 10px;
+        width: 100%;
+        z-index: -1;
+        text-align: center;
+      }
+
+footer{
+    position: relative;
+    bottom: 0;
+    background: #111;
+    height: auto;
+    width: 98.9322vw;
+    color: #fff;
+}
+
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    color:white;
+}
+
+    
+
+ h3{
+    font-size: 2.1em;
+    color: white;
+     margin-left: 45%;
+     font-family: 'Sternbach', sans-serif;
+     font-family: 'Sternbach Hollow', sans-serif;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+ li{
+    margin: 0 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+ul li a:hover{
+    color:red;
+    
+}
+
+@media (max-width:600px) {
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+    }
+    li{
+        margin: 0 15px;
+    }
+    ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.6em;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    h3{
+        
+    font-size: 1.5em;
+       margin-left: 30%;
+       
+     
+        
+    }
+    }
+  
+     
+    @media screen and (max-width: 600px) {
+       
+        table {
+            
+            height: 10px;
+            margin-top: 55px;
+            border-spacing: 0;
+            align-items: center;
+        }
+        th,
+        td {
+            text-align: center;
+            padding: 5px;
+            border-bottom: 1px solid white;
+            font-family: 'Sternbach', sans-serif;
+    
+            font-size: 0.8em;
+        }
+        caption {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 0.5em;
+            color: red;
+            font-family: 'Sternbach', sans-serif;
+     font-family: 'Sternbach Hollow', sans-serif;
+        }
+        td:nth-child(4) {
+            display: none;
+        }
+        th:nth-child(4) {
+            display: none;
+        }
+        td:nth-child(2) {
+            display: none;
+        }
+        th:nth-child(2) {
+            display: none;
+        }
+    
+            
+    }
+        
+    
+    
+
+    table {
+        
+        width: 90%;
+        margin-top: 55px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-spacing: 0;
+       
+        color: white;
+    }
+  
+    th,
+    td {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid white;
+        font-family: 'Sternbach', sans-serif;
+    
+    }
+   
+    caption {
+        margin: 2em;
+        font-size: 1em;
+        color: red;
+        font-family: 'Sternbach', sans-serif;
+     font-family: 'Sternbach Hollow', sans-serif;
+    }
+    
+   
+    #trofej {
+        height: 150px;
+        width: auto;
+    }
